@@ -1,0 +1,53 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+     'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: 400;
+}
+
+
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* navbar */
+a {
+    color: #fff;
+}
+
+.nav-link {
+    font-weight: 700;
+}
+
+.navbar {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* hero section*/
+
+.hero {
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    border: 1px solid #fff;
+}
