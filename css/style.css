@@ -20,6 +20,13 @@ h1 {
     text-transform: uppercase;
 }
 
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #f65f33;
+}
+
 /* navbar */
 a {
     color: #fff;
@@ -89,4 +96,19 @@ span {
 
 .service-icon {
     background-color: #f65f33;
+}
+
+.service-icon i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Testimonials */
+
+.slider-item {
+    display: none;
+}
+
+.active-slider-item {
+    display: block;
 }
