@@ -29,7 +29,7 @@ img.rounded-circle {
 
 /* navbar */
 a {
-    color: #fff;
+    color: #303030;
 }
 
 a:hover{
@@ -112,3 +112,12 @@ span {
 .active-slider-item {
     display: block;
 }
+
+.img-fluid {
+    overflow: hidden;
+}
+
+ .gas-img {
+    width: 350px;
+    height: 350px;
+} 
