@@ -121,3 +121,20 @@ span {
     width: 350px;
     height: 350px;
 } 
+
+/* team */
+
+.team-social-links {
+    background-color: #303030;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.team-social-links {
+    color: #fff;
+}
+
+.team-social-links a:hover {
+    color: #f65f33;
+}
