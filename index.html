@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- headdr/ Nav -->
-      <nav class="fixed-top navbar navbar-expand-lg ">
+      <nav id="header" class="fixed-top navbar navbar-expand-lg ">
           <a class="navbar-brand" href="#">RXM</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -401,6 +401,44 @@
     <p>Rose X Mary Media &copy; 2020 by X</p>
   </footer>
 
+  <script>
+    window.onscroll = function() {
+      handleScroll();
+    }
+    function handleScroll() {
+      if(document.body.scrollTop > 1) {
+        document.getElementById('header').style.backgroundColor = "#fff";
+      }
+      else {
+        document.getElementById('header').style.backgroundColor = "transperent";
+
+      }
+    }
+
+function sleep(time) {
+  return new Promise((response) => setTimeout(response, time))
+}
+
+var aSlides = document.getElementsByClassName('slider-item');
+
+async function slide(iIndex, aSlides) {
+  aSlides[iIndex].className = "slider-item active-slider-item";
+  if(iIndex == 0) {
+    aSlides[iIndex.length - 1].className = "slider-item";
+  } else {
+    aSlides[iIndex - 1].className = "slider-item";
+  }
+
+  sleep(3000).then(() => {
+    if(iIndex == aSlides.length - 1){
+      iIndex = -1;
+    }
+    slide(iIndex + 1, aSlides);
+  })
+}
+
+slide(1, aSlides);
+  </script>
 
   <script src="https://kit.fontawesome.com/562dfbd3d7.js" crossorigin="anonymous"></script>
 </body>
